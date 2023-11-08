@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monte Carlo Simulation for π</title>
+</head>
+<body>
+    <h1>Monty's Pi shop!</h1>
+    <p>Enter the number of slices</p>
+    <form method="post">
+        <input type="number" name="num_samples" required>
+        <input type="submit" value="Estimate π">
+    </form>
+    {% if estimated_pi %}
+    <p>heres how many ya get: {{ estimated_pi }}</p>
+    {% endif %}
+</body>
+</html>
